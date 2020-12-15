@@ -1,3 +1,5 @@
+import uuid
+
 from django.db import models
 
 # Create your models here.
@@ -23,6 +25,10 @@ class Plan(models.Model):
     tax = models.FloatField()
     convienience_fee = models.FloatField()
 
+    # TODO: make this more helpful, get it in table format in admin.
+    def __str__(self):
+        return f"{self.id}"
+
 
 class Quote(models.Model):
     """
@@ -31,14 +37,16 @@ class Quote(models.Model):
     to making a purchase. The quote​ object is where we store the customer’s responses.
 
     """
-    id = models.CharField(max_length=10)
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    quote_number = models.CharField(max_length=10)
     effective_date = models.DateField()
-    had_previous_policy_cancelled = models.BooleanField(default=False)
-    # TODO: Decide if we want GEO database here
-    distance_to_volcano = models.FloatField()
-    is_owned = models.BooleanField()
-    # TODO: Decide if this needs GOOGLE geolocation
+    previous_policy_cancelled = models.BooleanField(default=False)
+    property_mileage_to_nearest_volcano = models.FloatField()
+    owns_property_to_be_insured = models.BooleanField()
+    # TODO: Use mailing address model
     mailing_address = models.TextField()
-    # TODO: Decide if this needs GOOGLE geolocation
     property_address = models.TextField()
-    plan_id = models.ForeignKey(Plan)
+    plan_id = models.ForeignKey(Plan, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.id}"
