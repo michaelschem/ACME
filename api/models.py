@@ -2,7 +2,18 @@ import uuid
 
 from django.db import models
 
-# Create your models here.
+
+class Address(models.Model):
+    """
+    An address object that will hold all the neccessary data for a standard address.  This will primarily be used in
+    the quote object.
+
+    """
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    line1 = models.TextField()
+    city = models.TextField()
+    state = models.TextField()
+    zip_code = models.IntegerField()
 
 
 class Plan(models.Model):
@@ -15,19 +26,59 @@ class Plan(models.Model):
     """
 
     # plan_variables
-    proximity_to_volcano = models.FloatField()
-    is_underwater_coverage = models.BooleanField()
-    is_super_volcano_coverage = models.BooleanField()
-    coverage_limit = models.FloatField()
-
-    # rate_variables
-    premium = models.FloatField()
-    tax = models.FloatField()
-    convienience_fee = models.FloatField()
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    name = models.TextField()
 
     # TODO: make this more helpful, get it in table format in admin.
     def __str__(self):
         return f"{self.id}"
+
+
+class Variable(models.Model):
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    name = models.TextField()
+    description = models.TextField()
+    value = None
+
+
+class PlanVariable(Variable):
+    plan = models.ManyToManyField(Plan, related_name='plan_variables')
+
+
+class IntPlanVariable(PlanVariable):
+    value = models.IntegerField()
+
+
+class StrPlanVariable(PlanVariable):
+    value = models.TextField()
+
+
+class FltPlanVariable(PlanVariable):
+    value = models.FloatField()
+
+
+class BoolPlanVariable(PlanVariable):
+    value = models.BooleanField()
+
+
+class RateVariable(Variable):
+    plan = models.ManyToManyField(Plan, related_name='rate_variables')
+
+
+class IntRateVariable(RateVariable):
+    value = models.IntegerField()
+
+
+class StrRateVariable(RateVariable):
+    value = models.TextField()
+
+
+class FltRateVariable(RateVariable):
+    value = models.FloatField()
+
+
+class BoolRateVariable(RateVariable):
+    value = models.BooleanField()
 
 
 class Quote(models.Model):
@@ -43,10 +94,10 @@ class Quote(models.Model):
     previous_policy_cancelled = models.BooleanField(default=False)
     property_mileage_to_nearest_volcano = models.FloatField()
     owns_property_to_be_insured = models.BooleanField()
-    # TODO: Use mailing address model
-    mailing_address = models.TextField()
-    property_address = models.TextField()
-    plan_id = models.ForeignKey(Plan, on_delete=models.CASCADE)
+    mailing_address = models.ForeignKey(Address, related_name='mailing_address', on_delete=models.CASCADE)
+    property_address = models.ForeignKey(Address, related_name='property_address', on_delete=models.CASCADE)
+    # TODO: change back to required
+    plan = models.ForeignKey(Plan, related_name='quotes', on_delete=models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return f"{self.id}"
