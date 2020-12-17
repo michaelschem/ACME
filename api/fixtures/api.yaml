@@ -73,19 +73,19 @@
 -   model: api.planvariable
     pk: f2ddf9af-d982-4204-a15e-4a140c1f58ca
     fields: {}
--   model: api.proximitytovolcanoplanvariable
+-   model: api.proximitytovolcano
     pk: f2ddf9af-d982-4204-a15e-4a140c1f58ca
     fields:
         value: 100-150
--   model: api.underwatervolcanocoverageplanvariable
+-   model: api.underwatervolcanocoverage
     pk: e6504872-2952-4f44-bbef-bd738a770663
     fields:
         value: false
--   model: api.supervolcanocoverageplanvariable
+-   model: api.supervolcanocoverage
     pk: 688545c1-7d93-42f3-8f8f-85bb2724d40a
     fields:
         value: true
--   model: api.coveragelimitplanvariable
+-   model: api.coveragelimit
     pk: 2f0a234d-c70e-4bfb-9a8a-14a7c17d399b
     fields:
         value: 100000.0
@@ -98,15 +98,15 @@
 -   model: api.ratevariable
     pk: a2771552-918a-4cb7-b6e0-682e8feb5f18
     fields: {}
--   model: api.premiumratevariable
+-   model: api.premium
     pk: 97050cb6-cca9-4f91-8984-6a684f24e2d4
     fields:
         value: 100000
--   model: api.taxratevariable
+-   model: api.tax
     pk: a2771552-918a-4cb7-b6e0-682e8feb5f18
     fields:
         value: 1.8
--   model: api.conveniencefeeratevariable
+-   model: api.conveniencefee
     pk: 0a09d43c-c017-44d7-935e-a34b4b93f56a
     fields:
         value: 4.99
