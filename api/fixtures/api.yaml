@@ -6,12 +6,26 @@
         state: WA
         zip_code: 98112
 -   model: api.address
+    pk: 6446d64e-9790-4ae1-aa63-9871dec434d4
+    fields:
+        line1: 408 W Manchester
+        city: Playa Del Rey
+        state: CA
+        zip_code: 90292
+-   model: api.address
     pk: cb78e949-5275-4fee-b505-99014aac48ff
     fields:
         line1: 321 E Main St.
         city: Seattle
         state: WA
         zip_code: 98112
+-   model: api.address
+    pk: ef8b17ba-69df-4a56-bbfd-53917466e528
+    fields:
+        line1: 13555 Fiji Way
+        city: Marina Del Rey
+        state: CA
+        zip_code: 90292
 -   model: api.variable
     pk: 0a09d43c-c017-44d7-935e-a34b4b93f56a
     fields:
@@ -117,4 +131,15 @@
         owns_property_to_be_insured: true
         mailing_address: 3009e51d-f783-4297-bea5-91f5dc80a2ec
         property_address: cb78e949-5275-4fee-b505-99014aac48ff
+        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
+-   model: api.quote
+    pk: a8b5908e-3a1b-4ec8-b71a-2a8b296a5df4
+    fields:
+        quote_number: w9dk28fh2P
+        effective_date: 2020-12-17
+        previous_policy_cancelled: true
+        property_mileage_to_nearest_volcano: 90.02
+        owns_property_to_be_insured: false
+        mailing_address: ef8b17ba-69df-4a56-bbfd-53917466e528
+        property_address: 6446d64e-9790-4ae1-aa63-9871dec434d4
         plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
