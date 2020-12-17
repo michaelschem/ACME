@@ -1,17 +1,17 @@
 from django.contrib import admin
 
 from .models import Plan, Quote, Address, Variable, \
-    ProximityToVolcanoPlanVariable, UnderwaterVolcanoCoveragePlanVariable, SuperVolcanoCoveragePlanVariable, CoverageLimitPlanVariable, \
-    PremiumRateVariable, TaxRateVariable, ConvenienceFeeRateVariable
+    ProximityToVolcano, UnderwaterVolcanoCoverage, SuperVolcanoCoverage, CoverageLimit, \
+    Premium, Tax, ConvenienceFee
 
 admin.site.register(Plan)
 admin.site.register(Quote)
 admin.site.register(Address)
 # admin.site.register(Variable)
-admin.site.register(ProximityToVolcanoPlanVariable)
-admin.site.register(UnderwaterVolcanoCoveragePlanVariable)
-admin.site.register(SuperVolcanoCoveragePlanVariable)
-admin.site.register(CoverageLimitPlanVariable)
-admin.site.register(PremiumRateVariable)
-admin.site.register(TaxRateVariable)
-admin.site.register(ConvenienceFeeRateVariable)
+admin.site.register(ProximityToVolcano)
+admin.site.register(UnderwaterVolcanoCoverage)
+admin.site.register(SuperVolcanoCoverage)
+admin.site.register(CoverageLimit)
+admin.site.register(Premium)
+admin.site.register(Tax)
+admin.site.register(ConvenienceFee)

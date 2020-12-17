@@ -27,19 +27,19 @@ class PlanVariable(Variable):
     value = None
 
 
-class ProximityToVolcanoPlanVariable(PlanVariable):
+class ProximityToVolcano(PlanVariable):
     value = models.TextField()
 
 
-class UnderwaterVolcanoCoveragePlanVariable(PlanVariable):
+class UnderwaterVolcanoCoverage(PlanVariable):
     value = models.BooleanField()
 
 
-class SuperVolcanoCoveragePlanVariable(PlanVariable):
+class SuperVolcanoCoverage(PlanVariable):
     value = models.BooleanField()
 
 
-class CoverageLimitPlanVariable(PlanVariable):
+class CoverageLimit(PlanVariable):
     value = models.FloatField()
 
 
@@ -47,15 +47,15 @@ class RateVariable(Variable):
     value = None
 
 
-class PremiumRateVariable(RateVariable):
+class Premium(RateVariable):
     value = models.IntegerField()
 
 
-class TaxRateVariable(RateVariable):
+class Tax(RateVariable):
     value = models.FloatField()
 
 
-class ConvenienceFeeRateVariable(RateVariable):
+class ConvenienceFee(RateVariable):
     value = models.FloatField()
 
 
@@ -72,15 +72,15 @@ class Plan(models.Model):
     name = models.TextField()
 
     # plan_variables
-    proximity_to_volcano = models.ForeignKey(ProximityToVolcanoPlanVariable, on_delete=models.CASCADE)
-    underwater_volcano_coverage = models.ForeignKey(UnderwaterVolcanoCoveragePlanVariable, on_delete=models.CASCADE)
-    super_volcano_coverage = models.ForeignKey(SuperVolcanoCoveragePlanVariable, on_delete=models.CASCADE)
-    coverage_limit = models.ForeignKey(CoverageLimitPlanVariable, on_delete=models.CASCADE)
+    proximity_to_volcano = models.ForeignKey(ProximityToVolcano, on_delete=models.CASCADE)
+    underwater_volcano_coverage = models.ForeignKey(UnderwaterVolcanoCoverage, on_delete=models.CASCADE)
+    super_volcano_coverage = models.ForeignKey(SuperVolcanoCoverage, on_delete=models.CASCADE)
+    coverage_limit = models.ForeignKey(CoverageLimit, on_delete=models.CASCADE)
 
     # rate_variables
-    premium = models.ForeignKey(PremiumRateVariable, on_delete=models.CASCADE)
-    tax = models.ForeignKey(TaxRateVariable, on_delete=models.CASCADE)
-    convenience_fee = models.ForeignKey(ConvenienceFeeRateVariable, on_delete=models.CASCADE)
+    premium = models.ForeignKey(Premium, on_delete=models.CASCADE)
+    tax = models.ForeignKey(Tax, on_delete=models.CASCADE)
+    convenience_fee = models.ForeignKey(ConvenienceFee, on_delete=models.CASCADE)
 
     # TODO: make this more helpful, get it in table format in admin.
     def __str__(self):
