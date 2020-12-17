@@ -10,8 +10,8 @@ class AddressSerializer(serializers.ModelSerializer):
 
 
 class QuoteSerializer(serializers.ModelSerializer):
-    mailing_address = AddressSerializer(read_only=True)
-    property_address = AddressSerializer(read_only=True)
+    mailing_address = AddressSerializer(read_only=False)
+    property_address = AddressSerializer(read_only=False)
 
     class Meta:
         model = Quote
@@ -25,6 +25,17 @@ class QuoteSerializer(serializers.ModelSerializer):
                   'property_address',
                   'plan_id',
                   )
+
+    def create(self, validated_data):
+        mailing_address_data = validated_data.pop('mailing_address')
+        mailing_address = Address.objects.create(**mailing_address_data)
+
+        property_address_data = validated_data.pop('property_address')
+        property_address = Address.objects.create(**property_address_data)
+
+        quote = Quote.objects.create(mailing_address=mailing_address, property_address=property_address, **validated_data)
+
+        return quote
 
 
 class VariableSerializer(serializers.ModelSerializer):
