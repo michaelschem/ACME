@@ -105,8 +105,7 @@ class Quote(models.Model):
     owns_property_to_be_insured = models.BooleanField()
     mailing_address = models.ForeignKey(Address, related_name='mailing_address', on_delete=models.CASCADE)
     property_address = models.ForeignKey(Address, related_name='property_address', on_delete=models.CASCADE)
-    # TODO: change back to required
-    plan = models.ForeignKey(Plan, related_name='quotes', on_delete=models.CASCADE, null=True, blank=True)
+    plan = models.ForeignKey(Plan, related_name='quotes', on_delete=models.CASCADE)
 
     def __str__(self):
         return f"{self.id}"

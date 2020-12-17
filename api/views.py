@@ -1,20 +1,18 @@
 from django.shortcuts import render
 
-from rest_framework import viewsets
+from rest_framework import viewsets, mixins
 
 from .serializers import PlanSerializer, QuoteSerializer
 from .models import Plan, Quote
 
 
-class PlanViewSet(viewsets.ModelViewSet):
+class PlanViewSet(mixins.RetrieveModelMixin,
+                  mixins.ListModelMixin,
+                  viewsets.GenericViewSet):
     serializer_class = PlanSerializer
 
     def get_queryset(self):
         return Plan.objects.all().order_by('id')
-
-    def perform_create(self, serializer):
-        # TODO: need this?
-        serializer.save()
 
 
 class QuoteViewSet(viewsets.ModelViewSet):
@@ -28,6 +26,5 @@ class QuoteViewSet(viewsets.ModelViewSet):
             return Quote.objects.all().order_by('id')
 
     def perform_create(self, serializer):
-        # TODO: finish
         serializer.save()
 
