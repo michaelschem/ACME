@@ -34,14 +34,31 @@ class VariableSerializer(serializers.ModelSerializer):
 
 
 class PlanSerializer(serializers.ModelSerializer):
-    plan_variables = VariableSerializer(many=True, read_only=True)
+    plan_variables = serializers.SerializerMethodField('collect_plan_variables')
+    rate_variables = serializers.SerializerMethodField('collect_rate_variables')
+
+    def collect_plan_variables(self, plan):
+        return [VariableSerializer(plan.proximity_to_volcano).data,
+                VariableSerializer(plan.underwater_volcano_coverage).data,
+                VariableSerializer(plan.super_volcano_coverage).data,
+                VariableSerializer(plan.coverage_limit).data]
+
+    def collect_rate_variables(self, plan):
+        return [VariableSerializer(plan.premium).data,
+                VariableSerializer(plan.tax).data,
+                VariableSerializer(plan.convenience_fee).data]
 
     class Meta:
         model = Plan
         fields = ('id',
                   'name',
-                  'plan_variables'
+                  'plan_variables',
+                  'rate_variables',
                   )
 
+# class PlanSerializer(serializers.Serializer):
+#     name = serializers.CharField()
+#     proximity_to_volcano = VariableSerializer()
+#     # plan_variables = serializers.ListField()
 
 

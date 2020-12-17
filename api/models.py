@@ -16,6 +16,49 @@ class Address(models.Model):
     zip_code = models.IntegerField()
 
 
+class Variable(models.Model):
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    name = models.TextField()
+    description = models.TextField()
+    value = None
+
+
+class PlanVariable(Variable):
+    value = None
+
+
+class ProximityToVolcanoPlanVariable(PlanVariable):
+    value = models.TextField()
+
+
+class UnderwaterVolcanoCoveragePlanVariable(PlanVariable):
+    value = models.BooleanField()
+
+
+class SuperVolcanoCoveragePlanVariable(PlanVariable):
+    value = models.BooleanField()
+
+
+class CoverageLimitPlanVariable(PlanVariable):
+    value = models.FloatField()
+
+
+class RateVariable(Variable):
+    value = None
+
+
+class PremiumRateVariable(RateVariable):
+    value = models.IntegerField()
+
+
+class TaxRateVariable(RateVariable):
+    value = models.FloatField()
+
+
+class ConvenienceFeeRateVariable(RateVariable):
+    value = models.FloatField()
+
+
 class Plan(models.Model):
     """
     ACME Insurance’s Volcano Insurance product provides multiple coverage options to individuals that live within a
@@ -25,60 +68,26 @@ class Plan(models.Model):
 
     """
 
-    # plan_variables
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     name = models.TextField()
+
+    # plan_variables
+    proximity_to_volcano = models.ForeignKey(ProximityToVolcanoPlanVariable, on_delete=models.CASCADE)
+    underwater_volcano_coverage = models.ForeignKey(UnderwaterVolcanoCoveragePlanVariable, on_delete=models.CASCADE)
+    super_volcano_coverage = models.ForeignKey(SuperVolcanoCoveragePlanVariable, on_delete=models.CASCADE)
+    coverage_limit = models.ForeignKey(CoverageLimitPlanVariable, on_delete=models.CASCADE)
+
+    # rate_variables
+    premium = models.ForeignKey(PremiumRateVariable, on_delete=models.CASCADE)
+    tax = models.ForeignKey(TaxRateVariable, on_delete=models.CASCADE)
+    convenience_fee = models.ForeignKey(ConvenienceFeeRateVariable, on_delete=models.CASCADE)
 
     # TODO: make this more helpful, get it in table format in admin.
     def __str__(self):
         return f"{self.id}"
 
 
-class Variable(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    name = models.TextField()
-    description = models.TextField()
-    value = None
 
-
-class PlanVariable(Variable):
-    plan = models.ManyToManyField(Plan, related_name='plan_variables')
-
-
-class IntPlanVariable(PlanVariable):
-    value = models.IntegerField()
-
-
-class StrPlanVariable(PlanVariable):
-    value = models.TextField()
-
-
-class FltPlanVariable(PlanVariable):
-    value = models.FloatField()
-
-
-class BoolPlanVariable(PlanVariable):
-    value = models.BooleanField()
-
-
-class RateVariable(Variable):
-    plan = models.ManyToManyField(Plan, related_name='rate_variables')
-
-
-class IntRateVariable(RateVariable):
-    value = models.IntegerField()
-
-
-class StrRateVariable(RateVariable):
-    value = models.TextField()
-
-
-class FltRateVariable(RateVariable):
-    value = models.FloatField()
-
-
-class BoolRateVariable(RateVariable):
-    value = models.BooleanField()
 
 
 class Quote(models.Model):
