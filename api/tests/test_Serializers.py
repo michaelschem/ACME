@@ -17,7 +17,7 @@ class QuoteSerializerTests(TestCase):
             "quote_number": "30Z1huPz4l", "effective_date": "2020-12-17", "previous_policy_cancelled": False,
             "property_mileage_to_nearest_volcano": 100.0, "owns_property_to_be_insured": True,
             "property_address": {"line1": "321 E Main St.", "city": "Seattle", "state": "WA", "zip_code": 98112},
-            "plan_id": "4f788924-d61f-4d11-ac60-17f62f9e47b7"}
+            "plan_id": "6c296d4cef9a42d1ace5fb037485e82f"}
         serializer = QuoteSerializer(data=validated_data, context={"request": request})
         serializer.create(validated_data)
 

@@ -12,6 +12,7 @@ class AddressModelTests(TestCase):
         mailing_address.state = 'WA'
         mailing_address.zip_code = '98112'
 
+        self.assertEqual('123 E Main St. Seattle WA 98112',str(mailing_address))
 
 class VariableModelTests(TestCase):
     def test_create_variables(self):
@@ -23,6 +24,8 @@ class VariableModelTests(TestCase):
         variable.value = 100000
         variable.value = 1.80
 
+        self.assertEqual('Proximity To Volcano: 1.8', str(variable))
+
 
 class PlanVariableTests(TestCase):
     def test_create_plan_variable(self):
@@ -32,71 +35,79 @@ class PlanVariableTests(TestCase):
         plan_variable.value = 100000
         plan_variable.value = 1.80
 
+        self.assertEqual('1.8', str(plan_variable))
+
 
 class ProximityToVolcanoTests(TestCase):
-    def create_proximity_to_volcano(self):
+    def test_create_proximity_to_volcano(self):
         proximity_to_volcano = ProximityToVolcano()
         proximity_to_volcano.value = '100-150'
 
+        self.assertEqual('100-150', str(proximity_to_volcano))
+
 
 class UnderwaterVolcanoCoverageTests(TestCase):
-    def create_underwater_volcano_coverage(self):
+    def test_create_underwater_volcano_coverage(self):
         under_water_volcano_coverage = UnderwaterVolcanoCoverage()
         under_water_volcano_coverage.value = False
 
+        self.assertEqual('False', str(under_water_volcano_coverage))
+
 
 class SuperVolcanoCoverageTesets(TestCase):
-    def create_super_volcano_coverage(self):
+    def test_create_super_volcano_coverage(self):
         super_volcano_coverage = SuperVolcanoCoverage()
         super_volcano_coverage.value = True
 
-        self.assertTrue(True)
+        self.assertEqual('True', str(super_volcano_coverage))
 
 
 class CoverageLimitTests(TestCase):
-    def create_coverage_limit(self):
+    def test_create_coverage_limit(self):
         coverage_limit = CoverageLimit()
         coverage_limit.value = 100000
 
-        self.assertTrue(True)
+        self.assertEqual('100000', str(coverage_limit))
 
 
 class RateVariableTests(TestCase):
-    def create_rate_variable(self):
+    def test_create_rate_variable(self):
         rate_variable = RateVariable()
         rate_variable.value = '100-150'
         rate_variable.value = False
         rate_variable.value = 100000
         rate_variable.value = 1.80
 
-        self.assertTrue(True)
+        self.assertTrue('1.8', str(rate_variable))
 
 
 class PremiumTests(TestCase):
-    def create_premium(self):
+    def test_create_premium(self):
         premium = Premium()
         premium.value = 100000
         premium.save()
 
         self.assertEqual(premium.value, 100000)
+        self.assertEqual('100000', str(premium))
 
 
 class TaxTests(TestCase):
-    def create_tax(self):
+    def test_create_tax(self):
         tax = Tax()
         tax.value = 1.80
         tax.save()
 
-        self.assertEqual(tax.value, 1.80)
+        self.assertEqual('1.8', str(tax))
 
 
 class ConvenienceFeeTests(TestCase):
-    def create_convenience_fee(self):
+    def test_create_convenience_fee(self):
         convenience_fee = ConvenienceFee()
         convenience_fee.value = 4.99
         convenience_fee.save()
 
         self.assertEqual(convenience_fee.value, 4.99)
+        self.assertEqual('4.99', str(convenience_fee))
 
 
 class PlanModelTests(TestCase):
@@ -104,7 +115,7 @@ class PlanModelTests(TestCase):
         plan = Plan()
         plan.name = '2kdj283jkf'
 
-        self.assertEqual(str(plan.id), str(plan))
+        self.assertEqual(str(plan.name), str(plan))
 
 
 class QuoteModelTests(TestCase):
@@ -136,7 +147,7 @@ class QuoteModelTests(TestCase):
     def test_to_string(self):
         quote = Quote()
         quote.quote_number = '30Z1huPz4l'
-        quote.effective_date = '1993-01-20'
+        quote.effective_date = '2020-12-17'
         quote.previous_policy_cancelled = False
         quote.property_mileage_to_nearest_volcano = 100
         quote.owns_property_to_be_insured = True
@@ -153,7 +164,8 @@ class QuoteModelTests(TestCase):
         property_address.state = 'WA'
         property_address.zip_code = '98112'
 
-        quote.plan_id = '4f788924d61f4d11ac6017f62f9e47b7'
+        plan = Plan()
+        quote.plan = plan
 
-        self.assertEqual(str(quote.id), str(quote))
+        self.assertEqual('30Z1huPz4l, 2020-12-17,  ', str(quote))
 

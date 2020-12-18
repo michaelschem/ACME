@@ -3,3 +3,4 @@ omit =
     venv/*
     api/tests/*
     manage.py
+    Sure/*.py

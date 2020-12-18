@@ -1,508 +1,203 @@
 -   model: api.address
-    pk: 01ae5ad3-fa94-46ac-9ef5-16f4f71ea840
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 0671e7f6-3b01-46b8-a261-0ecbf0af28a5
-    fields:
-        line1: 2342 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 0f66fba2-a3ec-41cf-ad99-d7ced50d3ba8
-    fields:
-        line1: 3282 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 106912dd-b974-4cb4-a4be-150fa21c12bd
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 10c1ca56-a9f8-4853-8cdd-76f1ce47957f
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 250fcc90-0f90-48a2-bd93-96dc986d9385
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 3009e51d-f783-4297-bea5-91f5dc80a2ec
-    fields:
-        line1: 123 E Main St.
-        city: Seattle
-        state: WA
-        zip_code: 98112
--   model: api.address
-    pk: 314cc328-ec5b-457f-b6c5-3023b4e114b4
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 36c57dc0-0c58-4f73-af96-94f877f6a65d
-    fields:
-        line1: 2342 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 4120346a-482e-4111-ab66-15acf7b14b00
-    fields:
-        line1: asdf
-        city: asdf
-        state: awfsdf
-        zip_code: 32433
--   model: api.address
-    pk: 4c439bdc-7e6b-48ed-9ac3-3848b6e967cb
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 519dbe63-900f-40cd-9d0f-42a43e848329
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 52d690d5-c233-44b7-9aad-679a763dc0f4
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 558b0ee1-964a-408e-8dac-ae189f0611ff
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 5b909943-17c1-4aea-887f-0487d508821b
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 6446d64e-9790-4ae1-aa63-9871dec434d4
-    fields:
-        line1: 408 W Manchester
-        city: Playa Del Rey
-        state: CA
-        zip_code: 90292
--   model: api.address
-    pk: 67ad7841-09ad-4062-ad7d-ab622e0be6c7
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: 8ca7c37e-8514-483c-9c3c-b4e1d9c8610c
-    fields:
-        line1: 123 E Main St.
-        city: Seattle
-        state: WA
-        zip_code: 98112
--   model: api.address
-    pk: a5829c7e-1dd5-44a8-9608-80e4abfd53f6
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: a8000f7c-5233-4e3f-bf33-cb1aa0d3b86c
-    fields:
-        line1: 234 Santa Monica
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: acd2ada3-eb0e-40a9-8287-555da146a21f
-    fields:
-        line1: 3282 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: cb78e949-5275-4fee-b505-99014aac48ff
+    pk: ab75bb2e-d9f5-4420-812c-112a2da7c410
     fields:
         line1: 321 E Main St.
         city: Seattle
         state: WA
         zip_code: 98112
 -   model: api.address
-    pk: ef8b17ba-69df-4a56-bbfd-53917466e528
+    pk: c3f7ab4e-c1d8-440e-bdad-490efc4bfcd4
     fields:
-        line1: 13555 Fiji Way
-        city: Marina Del Rey
-        state: CA
-        zip_code: 90292
--   model: api.address
-    pk: f08bbb43-bfa0-4d1f-bc90-3c8ae09e14f8
-    fields:
-        line1: asfawed
-        city: asfwe
-        state: awesdf
-        zip_code: 234
--   model: api.address
-    pk: f1c2fe73-a259-4d13-adc4-2ab8d9f05d24
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: f23ef479-0f82-4039-8837-96cfd10303bc
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
--   model: api.address
-    pk: f61019fa-77a8-4138-8e17-8ce468bdfc67
-    fields:
-        line1: 321 E Main St.
+        line1: 123 E Main St.
         city: Seattle
         state: WA
         zip_code: 98112
--   model: api.address
-    pk: fe35ae9a-2fc6-4c00-9ab1-3be435a2ac2a
-    fields:
-        line1: 8382 Wilshire Blvd
-        city: Santa Monica
-        state: CA
-        zip_code: 90403
 -   model: api.variable
-    pk: 0a09d43c-c017-44d7-935e-a34b4b93f56a
+    pk: 08a6351b-4332-4804-bb73-32e0549b7a5a
+    fields:
+        name: Premium
+        description: Plan premium
+-   model: api.variable
+    pk: 1c25e10e-caa6-4d7d-9778-5d43621baa65
+    fields:
+        name: Tax
+        description: Total tax
+-   model: api.variable
+    pk: 1c2e477d-0596-4e88-9537-398737082abf
+    fields:
+        name: Tax
+        description: Total tax
+-   model: api.variable
+    pk: 2bf0ad73-f0e7-4066-90bf-e0e5371cd5f8
+    fields:
+        name: Supervolcano Coverage
+        description: Coverage includes Supervolcanoes
+-   model: api.variable
+    pk: 39fd6ffa-27d5-40b2-8e43-f8a08b3567df
+    fields:
+        name: Underwater Volcano Coverage
+        description: Coverage includes volcanoes located underwater
+-   model: api.variable
+    pk: 617ffe71-8078-4489-a32e-9c3598a33845
+    fields:
+        name: Coverage Limit
+        description: Plan coverage limit
+-   model: api.variable
+    pk: 77a3edaf-12f3-4b5e-91bb-c320425780fb
+    fields:
+        name: Supervolcano Coverage
+        description: Coverage includes Supervolcanoes
+-   model: api.variable
+    pk: 7db650c1-b2d6-4c5b-87e5-5cdef715868c
+    fields:
+        name: Proximity To Volcano
+        description: Coverage extends to properties within this range of a volcano
+-   model: api.variable
+    pk: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
+    fields:
+        name: Premium
+        description: Plan premium
+-   model: api.variable
+    pk: a9f6f250-027b-4cbf-a986-075acadd8529
+    fields:
+        name: Proximity To Volcano
+        description: Coverage extends to properties within this range of a volcano
+-   model: api.variable
+    pk: be8b0d00-ad82-419f-a54f-3f3261525435
     fields:
         name: Convenience Fee
         description: Policy processing convenience fee
 -   model: api.variable
-    pk: 181572db-2bd8-48ad-b888-59b44364de0c
+    pk: cc5f244a-4a7a-4444-bac2-4a8e2b991bd9
     fields:
-        name: Premium
-        description: Plan premium
+        name: Coverage Limit
+        description: Plan coverage limit
 -   model: api.variable
-    pk: 2a477d2c-8f00-45d9-ab5f-60386b2ee6e4
+    pk: d9ca97c2-d9e9-4a1c-9ae7-e2567dcf6bcd
     fields:
         name: Underwater Volcano Coverage
         description: Coverage includes volcanoes located underwater
--   model: api.variable
-    pk: 2f0a234d-c70e-4bfb-9a8a-14a7c17d399b
-    fields:
-        name: Coverage Limit
-        description: Plan coverage limit
--   model: api.variable
-    pk: 386d1a9c-4957-4317-b74c-a470242e2fa8
-    fields:
-        name: Coverage Limit
-        description: Plan coverage limit
--   model: api.variable
-    pk: 389a150f-ab6e-4912-b8c9-eb2e32fdd959
-    fields:
-        name: Supervolcano Coverage
-        description: Coverage includes Supervolcanoes
--   model: api.variable
-    pk: 40ebd296-4731-4281-b456-4cf2488e8eab
-    fields:
-        name: Proximity To Volcano
-        description: Coverage extends to properties within this range of a volcano
--   model: api.variable
-    pk: 63d4b480-ad75-4f02-971e-e337818be311
-    fields:
-        name: Coverage Limit
-        description: Plan coverage limit
--   model: api.variable
-    pk: 688545c1-7d93-42f3-8f8f-85bb2724d40a
-    fields:
-        name: Supervolcano Coverage
-        description: Coverage includes Supervolcanoes
--   model: api.variable
-    pk: 7eb16ac5-9048-481f-a376-6b2941bc13fa
-    fields:
-        name: Tax
-        description: Total tax
--   model: api.variable
-    pk: 97050cb6-cca9-4f91-8984-6a684f24e2d4
-    fields:
-        name: Premium
-        description: Plan premium
--   model: api.variable
-    pk: a2771552-918a-4cb7-b6e0-682e8feb5f18
-    fields:
-        name: Tax
-        description: Total tax
--   model: api.variable
-    pk: bb41151d-b163-4f1e-84bd-76c637f8e6a5
-    fields:
-        name: Proximity To Volcano
-        description: Coverage extends to properties within this range of a volcano
--   model: api.variable
-    pk: e6504872-2952-4f44-bbef-bd738a770663
-    fields:
-        name: Underwater Volcano Coverage
-        description: Coverage includes volcanoes located underwater
--   model: api.variable
-    pk: f2ddf9af-d982-4204-a15e-4a140c1f58ca
-    fields:
-        name: Proximity To Volcano
-        description: Coverage extends to properties within this range of a volcano
 -   model: api.planvariable
-    pk: 2a477d2c-8f00-45d9-ab5f-60386b2ee6e4
+    pk: 2bf0ad73-f0e7-4066-90bf-e0e5371cd5f8
     fields: {}
 -   model: api.planvariable
-    pk: 2f0a234d-c70e-4bfb-9a8a-14a7c17d399b
+    pk: 39fd6ffa-27d5-40b2-8e43-f8a08b3567df
     fields: {}
 -   model: api.planvariable
-    pk: 386d1a9c-4957-4317-b74c-a470242e2fa8
+    pk: 617ffe71-8078-4489-a32e-9c3598a33845
     fields: {}
 -   model: api.planvariable
-    pk: 389a150f-ab6e-4912-b8c9-eb2e32fdd959
+    pk: 77a3edaf-12f3-4b5e-91bb-c320425780fb
     fields: {}
 -   model: api.planvariable
-    pk: 40ebd296-4731-4281-b456-4cf2488e8eab
+    pk: 7db650c1-b2d6-4c5b-87e5-5cdef715868c
     fields: {}
 -   model: api.planvariable
-    pk: 63d4b480-ad75-4f02-971e-e337818be311
+    pk: a9f6f250-027b-4cbf-a986-075acadd8529
     fields: {}
 -   model: api.planvariable
-    pk: 688545c1-7d93-42f3-8f8f-85bb2724d40a
+    pk: cc5f244a-4a7a-4444-bac2-4a8e2b991bd9
     fields: {}
 -   model: api.planvariable
-    pk: bb41151d-b163-4f1e-84bd-76c637f8e6a5
-    fields: {}
--   model: api.planvariable
-    pk: e6504872-2952-4f44-bbef-bd738a770663
-    fields: {}
--   model: api.planvariable
-    pk: f2ddf9af-d982-4204-a15e-4a140c1f58ca
+    pk: d9ca97c2-d9e9-4a1c-9ae7-e2567dcf6bcd
     fields: {}
 -   model: api.proximitytovolcano
-    pk: 40ebd296-4731-4281-b456-4cf2488e8eab
-    fields:
-        value: 150-200
--   model: api.proximitytovolcano
-    pk: bb41151d-b163-4f1e-84bd-76c637f8e6a5
-    fields:
-        value: 200-250
--   model: api.proximitytovolcano
-    pk: f2ddf9af-d982-4204-a15e-4a140c1f58ca
+    pk: 7db650c1-b2d6-4c5b-87e5-5cdef715868c
     fields:
         value: 100-150
--   model: api.underwatervolcanocoverage
-    pk: 2a477d2c-8f00-45d9-ab5f-60386b2ee6e4
+-   model: api.proximitytovolcano
+    pk: a9f6f250-027b-4cbf-a986-075acadd8529
     fields:
-        value: true
+        value: 150-200
 -   model: api.underwatervolcanocoverage
-    pk: e6504872-2952-4f44-bbef-bd738a770663
+    pk: 39fd6ffa-27d5-40b2-8e43-f8a08b3567df
+    fields:
+        value: false
+-   model: api.underwatervolcanocoverage
+    pk: d9ca97c2-d9e9-4a1c-9ae7-e2567dcf6bcd
     fields:
         value: false
 -   model: api.supervolcanocoverage
-    pk: 389a150f-ab6e-4912-b8c9-eb2e32fdd959
+    pk: 2bf0ad73-f0e7-4066-90bf-e0e5371cd5f8
     fields:
-        value: false
+        value: true
 -   model: api.supervolcanocoverage
-    pk: 688545c1-7d93-42f3-8f8f-85bb2724d40a
+    pk: 77a3edaf-12f3-4b5e-91bb-c320425780fb
     fields:
         value: true
 -   model: api.coveragelimit
-    pk: 2f0a234d-c70e-4bfb-9a8a-14a7c17d399b
-    fields:
-        value: 100000.0
--   model: api.coveragelimit
-    pk: 386d1a9c-4957-4317-b74c-a470242e2fa8
+    pk: 617ffe71-8078-4489-a32e-9c3598a33845
     fields:
         value: 200000.0
 -   model: api.coveragelimit
-    pk: 63d4b480-ad75-4f02-971e-e337818be311
+    pk: cc5f244a-4a7a-4444-bac2-4a8e2b991bd9
     fields:
-        value: 1000000.0
+        value: 100000.0
 -   model: api.ratevariable
-    pk: 0a09d43c-c017-44d7-935e-a34b4b93f56a
+    pk: 08a6351b-4332-4804-bb73-32e0549b7a5a
     fields: {}
 -   model: api.ratevariable
-    pk: 181572db-2bd8-48ad-b888-59b44364de0c
+    pk: 1c25e10e-caa6-4d7d-9778-5d43621baa65
     fields: {}
 -   model: api.ratevariable
-    pk: 7eb16ac5-9048-481f-a376-6b2941bc13fa
+    pk: 1c2e477d-0596-4e88-9537-398737082abf
     fields: {}
 -   model: api.ratevariable
-    pk: 97050cb6-cca9-4f91-8984-6a684f24e2d4
+    pk: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
     fields: {}
 -   model: api.ratevariable
-    pk: a2771552-918a-4cb7-b6e0-682e8feb5f18
+    pk: be8b0d00-ad82-419f-a54f-3f3261525435
     fields: {}
 -   model: api.premium
-    pk: 181572db-2bd8-48ad-b888-59b44364de0c
+    pk: 08a6351b-4332-4804-bb73-32e0549b7a5a
     fields:
         value: 10000
 -   model: api.premium
-    pk: 97050cb6-cca9-4f91-8984-6a684f24e2d4
+    pk: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
     fields:
         value: 100000
 -   model: api.tax
-    pk: 7eb16ac5-9048-481f-a376-6b2941bc13fa
+    pk: 1c25e10e-caa6-4d7d-9778-5d43621baa65
     fields:
-        value: 2.5
+        value: 2.2
 -   model: api.tax
-    pk: a2771552-918a-4cb7-b6e0-682e8feb5f18
+    pk: 1c2e477d-0596-4e88-9537-398737082abf
     fields:
         value: 1.8
 -   model: api.conveniencefee
-    pk: 0a09d43c-c017-44d7-935e-a34b4b93f56a
+    pk: be8b0d00-ad82-419f-a54f-3f3261525435
     fields:
         value: 4.99
 -   model: api.plan
-    pk: 4f788924-d61f-4d11-ac60-17f62f9e47b7
-    fields:
-        name: ​Example Plan
-        proximity_to_volcano: f2ddf9af-d982-4204-a15e-4a140c1f58ca
-        underwater_volcano_coverage: e6504872-2952-4f44-bbef-bd738a770663
-        super_volcano_coverage: 688545c1-7d93-42f3-8f8f-85bb2724d40a
-        coverage_limit: 2f0a234d-c70e-4bfb-9a8a-14a7c17d399b
-        premium: 97050cb6-cca9-4f91-8984-6a684f24e2d4
-        tax: a2771552-918a-4cb7-b6e0-682e8feb5f18
-        convenience_fee: 0a09d43c-c017-44d7-935e-a34b4b93f56a
--   model: api.plan
-    pk: 9809beb9-f6fa-43a1-b048-73c20ca21b69
-    fields:
-        name: Good Plan
-        proximity_to_volcano: bb41151d-b163-4f1e-84bd-76c637f8e6a5
-        underwater_volcano_coverage: e6504872-2952-4f44-bbef-bd738a770663
-        super_volcano_coverage: 389a150f-ab6e-4912-b8c9-eb2e32fdd959
-        coverage_limit: 63d4b480-ad75-4f02-971e-e337818be311
-        premium: 97050cb6-cca9-4f91-8984-6a684f24e2d4
-        tax: a2771552-918a-4cb7-b6e0-682e8feb5f18
-        convenience_fee: 0a09d43c-c017-44d7-935e-a34b4b93f56a
--   model: api.plan
-    pk: a2c363ab-5fce-41fc-948b-fc7ff3496816
+    pk: 10e55ffd-49c8-4181-b90c-502ad2b3f1b0
     fields:
         name: Great Plan
-        proximity_to_volcano: 40ebd296-4731-4281-b456-4cf2488e8eab
-        underwater_volcano_coverage: 2a477d2c-8f00-45d9-ab5f-60386b2ee6e4
-        super_volcano_coverage: 389a150f-ab6e-4912-b8c9-eb2e32fdd959
-        coverage_limit: 386d1a9c-4957-4317-b74c-a470242e2fa8
-        premium: 181572db-2bd8-48ad-b888-59b44364de0c
-        tax: 7eb16ac5-9048-481f-a376-6b2941bc13fa
-        convenience_fee: 0a09d43c-c017-44d7-935e-a34b4b93f56a
--   model: api.quote
-    pk: 014bc68b-9f13-4245-8b5b-e7bcb776f673
+        proximity_to_volcano: a9f6f250-027b-4cbf-a986-075acadd8529
+        underwater_volcano_coverage: 39fd6ffa-27d5-40b2-8e43-f8a08b3567df
+        super_volcano_coverage: 77a3edaf-12f3-4b5e-91bb-c320425780fb
+        coverage_limit: 617ffe71-8078-4489-a32e-9c3598a33845
+        premium: 08a6351b-4332-4804-bb73-32e0549b7a5a
+        tax: 1c25e10e-caa6-4d7d-9778-5d43621baa65
+        convenience_fee: be8b0d00-ad82-419f-a54f-3f3261525435
+-   model: api.plan
+    pk: 6c296d4c-ef9a-42d1-ace5-fb037485e82f
     fields:
-        quote_number: ejf892i3ji
-        effective_date: 2020-12-16
-        previous_policy_cancelled: true
-        property_mileage_to_nearest_volcano: 212.0
-        owns_property_to_be_insured: false
-        mailing_address: 36c57dc0-0c58-4f73-af96-94f877f6a65d
-        property_address: acd2ada3-eb0e-40a9-8287-555da146a21f
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
+        name: Example Plan​
+        proximity_to_volcano: 7db650c1-b2d6-4c5b-87e5-5cdef715868c
+        underwater_volcano_coverage: d9ca97c2-d9e9-4a1c-9ae7-e2567dcf6bcd
+        super_volcano_coverage: 2bf0ad73-f0e7-4066-90bf-e0e5371cd5f8
+        coverage_limit: cc5f244a-4a7a-4444-bac2-4a8e2b991bd9
+        premium: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
+        tax: 1c2e477d-0596-4e88-9537-398737082abf
+        convenience_fee: be8b0d00-ad82-419f-a54f-3f3261525435
 -   model: api.quote
-    pk: 0d97fc46-6c44-45d4-a2f0-df4df7d1c111
-    fields:
-        quote_number: 30Z1huPz4l
-        effective_date: 2020-12-17
-        previous_policy_cancelled: false
-        property_mileage_to_nearest_volcano: 100.0
-        owns_property_to_be_insured: true
-        mailing_address: 3009e51d-f783-4297-bea5-91f5dc80a2ec
-        property_address: cb78e949-5275-4fee-b505-99014aac48ff
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
--   model: api.quote
-    pk: 16ed2334-bdac-4e36-896f-5d78173f4da8
-    fields:
-        quote_number: ejf892i3ji
-        effective_date: 2020-12-16
-        previous_policy_cancelled: true
-        property_mileage_to_nearest_volcano: 212.0
-        owns_property_to_be_insured: false
-        mailing_address: 0671e7f6-3b01-46b8-a261-0ecbf0af28a5
-        property_address: 0f66fba2-a3ec-41cf-ad99-d7ced50d3ba8
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
--   model: api.quote
-    pk: 75bdf426-ad3c-415e-98ee-36a09bfe1089
-    fields:
-        quote_number: ejf892i3ji
-        effective_date: 2020-12-16
-        previous_policy_cancelled: true
-        property_mileage_to_nearest_volcano: 212.0
-        owns_property_to_be_insured: false
-        mailing_address: 0671e7f6-3b01-46b8-a261-0ecbf0af28a5
-        property_address: 0f66fba2-a3ec-41cf-ad99-d7ced50d3ba8
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
--   model: api.quote
-    pk: a8b5908e-3a1b-4ec8-b71a-2a8b296a5df4
-    fields:
-        quote_number: w9dk28fh2P
-        effective_date: 2020-12-17
-        previous_policy_cancelled: true
-        property_mileage_to_nearest_volcano: 90.02
-        owns_property_to_be_insured: false
-        mailing_address: ef8b17ba-69df-4a56-bbfd-53917466e528
-        property_address: 6446d64e-9790-4ae1-aa63-9871dec434d4
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
--   model: api.quote
-    pk: b4396d07-6254-4d6c-b48b-23092380af50
-    fields:
-        quote_number: asdf
-        effective_date: 2020-12-17
-        previous_policy_cancelled: true
-        property_mileage_to_nearest_volcano: 23.0
-        owns_property_to_be_insured: false
-        mailing_address: 4120346a-482e-4111-ab66-15acf7b14b00
-        property_address: f08bbb43-bfa0-4d1f-bc90-3c8ae09e14f8
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
--   model: api.quote
-    pk: ba8463c1-7e4c-42c7-a730-d78aefda1fac
-    fields:
-        quote_number: ejf892i3ji
-        effective_date: 2020-12-16
-        previous_policy_cancelled: true
-        property_mileage_to_nearest_volcano: 212.0
-        owns_property_to_be_insured: false
-        mailing_address: 0671e7f6-3b01-46b8-a261-0ecbf0af28a5
-        property_address: 0f66fba2-a3ec-41cf-ad99-d7ced50d3ba8
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
--   model: api.quote
-    pk: d4aba628-e456-45ba-8608-d8f1a4abbe55
+    pk: 6b09cca4-505b-406c-93db-736fa0ecfe2b
     fields:
         quote_number: 30Z1huPz4l
         effective_date: 2020-12-17
         previous_policy_cancelled: false
         property_mileage_to_nearest_volcano: 100.0
         owns_property_to_be_insured: true
-        mailing_address: 8ca7c37e-8514-483c-9c3c-b4e1d9c8610c
-        property_address: f61019fa-77a8-4138-8e17-8ce468bdfc67
-        plan: 4f788924-d61f-4d11-ac60-17f62f9e47b7
--   model: api.quote
-    pk: f60b4f42-12ca-49d5-b193-0a3323397c3c
-    fields:
-        quote_number: eisj92u3jf
-        effective_date: 2020-12-17
-        previous_policy_cancelled: true
-        property_mileage_to_nearest_volcano: 20.0
-        owns_property_to_be_insured: true
-        mailing_address: 4c439bdc-7e6b-48ed-9ac3-3848b6e967cb
-        property_address: 106912dd-b974-4cb4-a4be-150fa21c12bd
-        plan: null
+        mailing_address: c3f7ab4e-c1d8-440e-bdad-490efc4bfcd4
+        property_address: ab75bb2e-d9f5-4420-812c-112a2da7c410
+        plan: 6c296d4c-ef9a-42d1-ace5-fb037485e82f
