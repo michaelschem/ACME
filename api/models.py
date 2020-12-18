@@ -15,6 +15,9 @@ class Address(models.Model):
     state = models.TextField()
     zip_code = models.IntegerField()
 
+    def __str__(self):
+        return f"{self.line1} {self.city} {self.state} {self.zip_code}"
+
 
 class Variable(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
@@ -22,41 +25,71 @@ class Variable(models.Model):
     description = models.TextField()
     value = None
 
+    def __str__(self):
+        return f"{self.name}: {self.value}"
+
 
 class PlanVariable(Variable):
     value = None
+
+    def __str__(self):
+        return f"{self.value}"
 
 
 class ProximityToVolcano(PlanVariable):
     value = models.TextField()
 
+    def __str__(self):
+        return f"{self.value}"
+
 
 class UnderwaterVolcanoCoverage(PlanVariable):
     value = models.BooleanField()
+
+    def __str__(self):
+        return f"{self.value}"
 
 
 class SuperVolcanoCoverage(PlanVariable):
     value = models.BooleanField()
 
+    def __str__(self):
+        return f"{self.value}"
+
 
 class CoverageLimit(PlanVariable):
     value = models.FloatField()
+
+    def __str__(self):
+        return f"{self.value}"
 
 
 class RateVariable(Variable):
     value = None
 
+    def __str__(self):
+        return f"{self.value}"
+
 
 class Premium(RateVariable):
     value = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.value}"
 
 
 class Tax(RateVariable):
     value = models.FloatField()
 
+    def __str__(self):
+        return f"{self.value}"
+
 
 class ConvenienceFee(RateVariable):
     value = models.FloatField()
+
+    def __str__(self):
+        return f"{self.value}"
 
 
 class Plan(models.Model):
@@ -84,7 +117,7 @@ class Plan(models.Model):
 
     # TODO: make this more helpful, get it in table format in admin.
     def __str__(self):
-        return f"{self.id}"
+        return f"{self.name}"
 
 
 
@@ -108,4 +141,4 @@ class Quote(models.Model):
     plan = models.ForeignKey(Plan, related_name='quotes', on_delete=models.CASCADE)
 
     def __str__(self):
-        return f"{self.id}"
+        return f"{self.quote_number}, {self.effective_date}, {self.plan} "

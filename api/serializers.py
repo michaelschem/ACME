@@ -23,7 +23,7 @@ class QuoteSerializer(serializers.ModelSerializer):
                   'owns_property_to_be_insured',
                   'mailing_address',
                   'property_address',
-                  'plan_id',
+                  'plan',
                   )
 
     def create(self, validated_data):

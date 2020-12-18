@@ -6,6 +6,21 @@ This is an application bilt for SURE to show backend skills in Django.
 
 ## How to run test suite
 
+```shell script
+coverage erase
+coverage run ./manage.py test
+coverage report -m
+coverage html
+open htmlcov/index.html
+
+```
+
+or on Mac
+
+```shell script
+./test.sh
+```
+
 ## Manage
 
 ### Create Database

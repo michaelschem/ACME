@@ -23,7 +23,9 @@ class QuoteViewSet(viewsets.ModelViewSet):
             return Quote.objects.filter(id=self.request.query_params['id'])\
                 .all().order_by('id')
         else:
-            return Quote.objects.all().order_by('id')
+            # Removed because it's not a requirement to return all quotes
+            return None
+            # return Quote.objects.all().order_by('id')
 
     def perform_create(self, serializer):
         serializer.save()
