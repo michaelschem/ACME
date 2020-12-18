@@ -39,5 +39,7 @@ class PlanSerializerTests(TestCase):
         PlanSerializer(validated_data)
 
     def test_deserialize_plan(self):
-        print(PlanSerializer(Plan.objects.first()).data)
+        expected_serialization = {'id': '10e55ffd-49c8-4181-b90c-502ad2b3f1b0', 'name': 'Great Plan', 'plan_variables': [{'name': 'Proximity To Volcano', 'description': 'Coverage extends to properties within this range of a volcano', 'value': '150-200'}, {'name': 'Underwater Volcano Coverage', 'description': 'Coverage includes volcanoes located underwater', 'value': True}, {'name': 'Supervolcano Coverage', 'description': 'Coverage includes Supervolcanoes', 'value': True}, {'name': 'Coverage Limit', 'description': 'Plan coverage limit', 'value': 200000.0}], 'rate_variables': [{'name': 'Premium', 'description': 'Plan premium', 'value': 10000}, {'name': 'Tax', 'description': 'Total tax', 'value': 2.2}, {'name': 'Convenience Fee', 'description': 'Policy processing convenience fee', 'value': 4.99}]}
+        serialization = PlanSerializer(Plan.objects.first()).data
+        self.assertEqual(expected_serialization, serialization)
 

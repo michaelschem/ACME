@@ -42,6 +42,35 @@ or on Mac
 ./test.sh
 ```
 
+You should get the following.
+
+```shell script
+ % ./test.sh
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+.........................
+----------------------------------------------------------------------
+Ran 25 tests in 0.290s
+
+OK
+Destroying test database for alias 'default'...
+Name                             Stmts   Miss  Cover   Missing
+--------------------------------------------------------------
+api/__init__.py                      0      0   100%
+api/admin.py                        12      0   100%
+api/apps.py                          3      0   100%
+api/migrations/0001_initial.py       7      0   100%
+api/migrations/__init__.py           0      0   100%
+api/models.py                       77      0   100%
+api/serializers.py                  33      0   100%
+api/urls.py                          7      0   100%
+api/views.py                        25      0   100%
+--------------------------------------------------------------
+TOTAL                              164      0   100%
+```
+
+As well as the HTML page opening for details.
+
 ## Manage
 
 ### Create Database
@@ -95,3 +124,5 @@ These are references to some of the articles used in the creation of this applic
 [Disable Method in ViewSet](https://stackoverflow.com/questions/23639113/disable-a-method-in-a-viewset-django-rest-framework)
 
 [Unit test serializer Django Rest Framework](https://stackoverflow.com/questions/61350340/unit-test-serializer-django-rest-framework)
+
+[Testing Django Rest](https://www.django-rest-framework.org/api-guide/testing/)

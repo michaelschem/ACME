@@ -20,6 +20,10 @@ class Address(models.Model):
 
 
 class Variable(models.Model):
+    """
+    Variable base class to be extended by PlanVariable and then each type of Plan variable to keep the type of variables
+    from getting mixed.
+    """
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     name = models.TextField()
     description = models.TextField()
@@ -115,7 +119,6 @@ class Plan(models.Model):
     tax = models.ForeignKey(Tax, on_delete=models.CASCADE)
     convenience_fee = models.ForeignKey(ConvenienceFee, on_delete=models.CASCADE)
 
-    # TODO: make this more helpful, get it in table format in admin.
     def __str__(self):
         return f"{self.name}"
 
