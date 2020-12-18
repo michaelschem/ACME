@@ -12,7 +12,11 @@ class PlanViewSet(mixins.RetrieveModelMixin,
     serializer_class = PlanSerializer
 
     def get_queryset(self):
-        return Plan.objects.all().order_by('id')
+        if 'id' in self.request.query_params.keys():
+            return Plan.objects.filter(id=self.request.query_params['id'])\
+                .all().order_by('id')
+        else:
+            return Plan.objects.all().order_by('id')
 
 
 class QuoteViewSet(viewsets.ModelViewSet):

@@ -53,12 +53,22 @@
         name: Proximity To Volcano
         description: Coverage extends to properties within this range of a volcano
 -   model: api.variable
+    pk: 84a325a0-ea0e-4878-9462-c2314f81aa7f
+    fields:
+        name: Convenience Fee
+        description: Policy processing convenience fee
+-   model: api.variable
     pk: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
     fields:
         name: Premium
         description: Plan premium
 -   model: api.variable
     pk: a9f6f250-027b-4cbf-a986-075acadd8529
+    fields:
+        name: Proximity To Volcano
+        description: Coverage extends to properties within this range of a volcano
+-   model: api.variable
+    pk: b83e5a4b-898c-423d-b4d2-bcf62647da25
     fields:
         name: Proximity To Volcano
         description: Coverage extends to properties within this range of a volcano
@@ -96,6 +106,9 @@
     pk: a9f6f250-027b-4cbf-a986-075acadd8529
     fields: {}
 -   model: api.planvariable
+    pk: b83e5a4b-898c-423d-b4d2-bcf62647da25
+    fields: {}
+-   model: api.planvariable
     pk: cc5f244a-4a7a-4444-bac2-4a8e2b991bd9
     fields: {}
 -   model: api.planvariable
@@ -109,10 +122,14 @@
     pk: a9f6f250-027b-4cbf-a986-075acadd8529
     fields:
         value: 150-200
+-   model: api.proximitytovolcano
+    pk: b83e5a4b-898c-423d-b4d2-bcf62647da25
+    fields:
+        value: 200-250
 -   model: api.underwatervolcanocoverage
     pk: 39fd6ffa-27d5-40b2-8e43-f8a08b3567df
     fields:
-        value: false
+        value: true
 -   model: api.underwatervolcanocoverage
     pk: d9ca97c2-d9e9-4a1c-9ae7-e2567dcf6bcd
     fields:
@@ -120,7 +137,7 @@
 -   model: api.supervolcanocoverage
     pk: 2bf0ad73-f0e7-4066-90bf-e0e5371cd5f8
     fields:
-        value: true
+        value: false
 -   model: api.supervolcanocoverage
     pk: 77a3edaf-12f3-4b5e-91bb-c320425780fb
     fields:
@@ -141,6 +158,9 @@
     fields: {}
 -   model: api.ratevariable
     pk: 1c2e477d-0596-4e88-9537-398737082abf
+    fields: {}
+-   model: api.ratevariable
+    pk: 84a325a0-ea0e-4878-9462-c2314f81aa7f
     fields: {}
 -   model: api.ratevariable
     pk: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
@@ -164,6 +184,10 @@
     pk: 1c2e477d-0596-4e88-9537-398737082abf
     fields:
         value: 1.8
+-   model: api.conveniencefee
+    pk: 84a325a0-ea0e-4878-9462-c2314f81aa7f
+    fields:
+        value: 10.0
 -   model: api.conveniencefee
     pk: be8b0d00-ad82-419f-a54f-3f3261525435
     fields:
@@ -190,6 +214,17 @@
         premium: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
         tax: 1c2e477d-0596-4e88-9537-398737082abf
         convenience_fee: be8b0d00-ad82-419f-a54f-3f3261525435
+-   model: api.plan
+    pk: 94d751c4-865f-4670-8f01-db1d5139414f
+    fields:
+        name: Excellent Plan
+        proximity_to_volcano: b83e5a4b-898c-423d-b4d2-bcf62647da25
+        underwater_volcano_coverage: d9ca97c2-d9e9-4a1c-9ae7-e2567dcf6bcd
+        super_volcano_coverage: 77a3edaf-12f3-4b5e-91bb-c320425780fb
+        coverage_limit: 617ffe71-8078-4489-a32e-9c3598a33845
+        premium: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
+        tax: 1c2e477d-0596-4e88-9537-398737082abf
+        convenience_fee: 84a325a0-ea0e-4878-9462-c2314f81aa7f
 -   model: api.quote
     pk: 6b09cca4-505b-406c-93db-736fa0ecfe2b
     fields:
