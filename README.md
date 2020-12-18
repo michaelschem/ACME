@@ -4,15 +4,49 @@ This is an application bilt for SURE to show backend skills in Django.
 
 ## How to use this API
 
-1) First start by running the django server.
+Run the startup script.
+```shell script
+start.sh
+```
+
+OR
+
+1) First get your virtual enviornment ready.
+
+```shell script
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+2) Create database.
+
+```shell script
+python manage.py makemigrations api
+python manage.py migrate
+```
+
+3) Create admin user.
+
+```shell script
+python manage.py createsuperuser --email admin@schempc.com --username admin
+```
+
+Enter a password for your admin account.
+
+4) Load fixtures.
+
+```shell script
+python manage.py loaddata api/fixtures/api.yaml
+```
+
+5) Start the application with a django server.
 ```shell script
 python manage.py runserver
 ```
-2) Navigate to `http://127.0.0.1:8000/` and make sure server is running.  You should get a welcome message and two
+6) Navigate to `http://127.0.0.1:8000/` and make sure server is running.  You should get a welcome message and two
 links, one to the admin portal and one to the API.
 
-3) From here you can either create your own data using the admin portal or follow steps in the manage section to Create
-the database, then  create a super user, and finally load data from the fixtures.
 
 ### API
 
