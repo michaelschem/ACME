@@ -14,79 +14,49 @@
         zip_code: 98112
 -   model: api.variable
     pk: 08a6351b-4332-4804-bb73-32e0549b7a5a
-    fields:
-        name: Premium
-        description: Plan premium
+    fields: {}
 -   model: api.variable
     pk: 1c25e10e-caa6-4d7d-9778-5d43621baa65
-    fields:
-        name: Tax
-        description: Total tax
+    fields: {}
 -   model: api.variable
     pk: 1c2e477d-0596-4e88-9537-398737082abf
-    fields:
-        name: Tax
-        description: Total tax
+    fields: {}
 -   model: api.variable
     pk: 2bf0ad73-f0e7-4066-90bf-e0e5371cd5f8
-    fields:
-        name: Supervolcano Coverage
-        description: Coverage includes Supervolcanoes
+    fields: {}
 -   model: api.variable
     pk: 39fd6ffa-27d5-40b2-8e43-f8a08b3567df
-    fields:
-        name: Underwater Volcano Coverage
-        description: Coverage includes volcanoes located underwater
+    fields: {}
 -   model: api.variable
     pk: 617ffe71-8078-4489-a32e-9c3598a33845
-    fields:
-        name: Coverage Limit
-        description: Plan coverage limit
+    fields: {}
 -   model: api.variable
     pk: 77a3edaf-12f3-4b5e-91bb-c320425780fb
-    fields:
-        name: Supervolcano Coverage
-        description: Coverage includes Supervolcanoes
+    fields: {}
 -   model: api.variable
     pk: 7db650c1-b2d6-4c5b-87e5-5cdef715868c
-    fields:
-        name: Proximity To Volcano
-        description: Coverage extends to properties within this range of a volcano
+    fields: {}
 -   model: api.variable
     pk: 84a325a0-ea0e-4878-9462-c2314f81aa7f
-    fields:
-        name: Convenience Fee
-        description: Policy processing convenience fee
+    fields: {}
 -   model: api.variable
     pk: a9f4984a-f332-41fc-8f68-8cdc9c0364c3
-    fields:
-        name: Premium
-        description: Plan premium
+    fields: {}
 -   model: api.variable
     pk: a9f6f250-027b-4cbf-a986-075acadd8529
-    fields:
-        name: Proximity To Volcano
-        description: Coverage extends to properties within this range of a volcano
+    fields: {}
 -   model: api.variable
     pk: b83e5a4b-898c-423d-b4d2-bcf62647da25
-    fields:
-        name: Proximity To Volcano
-        description: Coverage extends to properties within this range of a volcano
+    fields: {}
 -   model: api.variable
     pk: be8b0d00-ad82-419f-a54f-3f3261525435
-    fields:
-        name: Convenience Fee
-        description: Policy processing convenience fee
+    fields: {}
 -   model: api.variable
     pk: cc5f244a-4a7a-4444-bac2-4a8e2b991bd9
-    fields:
-        name: Coverage Limit
-        description: Plan coverage limit
+    fields: {}
 -   model: api.variable
     pk: d9ca97c2-d9e9-4a1c-9ae7-e2567dcf6bcd
-    fields:
-        name: Underwater Volcano Coverage
-        description: Coverage includes volcanoes located underwater
+    fields: {}
 -   model: api.planvariable
     pk: 2bf0ad73-f0e7-4066-90bf-e0e5371cd5f8
     fields: {}
