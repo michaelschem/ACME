@@ -25,8 +25,10 @@ class Variable(models.Model):
     from getting mixed.
     """
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    name = models.TextField()
-    description = models.TextField()
+    # name = models.TextField()
+    # description = models.TextField()
+    name = None
+    description = None
     value = None
 
     def __str__(self):
@@ -41,6 +43,8 @@ class PlanVariable(Variable):
 
 
 class ProximityToVolcano(PlanVariable):
+    name = "Proximity To Volcano"
+    description = "Coverage extends to properties within this range of a volcano"
     value = models.TextField()
 
     def __str__(self):
@@ -48,6 +52,8 @@ class ProximityToVolcano(PlanVariable):
 
 
 class UnderwaterVolcanoCoverage(PlanVariable):
+    name = "Underwater Volcano Coverage"
+    description = "Coverage includes volcanoes located underwater"
     value = models.BooleanField()
 
     def __str__(self):
@@ -55,6 +61,8 @@ class UnderwaterVolcanoCoverage(PlanVariable):
 
 
 class SuperVolcanoCoverage(PlanVariable):
+    name = "Supervolcano Coverage"
+    description = "Coverage includes Supervolcanoes"
     value = models.BooleanField()
 
     def __str__(self):
@@ -62,6 +70,8 @@ class SuperVolcanoCoverage(PlanVariable):
 
 
 class CoverageLimit(PlanVariable):
+    name = "Coverage Limit"
+    description = "Plan coverage limit"
     value = models.FloatField()
 
     def __str__(self):
@@ -76,6 +86,8 @@ class RateVariable(Variable):
 
 
 class Premium(RateVariable):
+    name = "Premium"
+    description = "Plan premium"
     value = models.IntegerField()
 
     def __str__(self):
@@ -83,6 +95,8 @@ class Premium(RateVariable):
 
 
 class Tax(RateVariable):
+    name = "Tax"
+    description = "Total tax"
     value = models.FloatField()
 
     def __str__(self):
@@ -90,6 +104,8 @@ class Tax(RateVariable):
 
 
 class ConvenienceFee(RateVariable):
+    name = "Convenience Fee"
+    description = "Policy processing convenience fee"
     value = models.FloatField()
 
     def __str__(self):
