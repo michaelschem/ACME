@@ -1,6 +1,6 @@
 # Sure ACME
 
-This is an application bilt for SURE to show backend skills in Django.
+This is an application to learn Django.
 
 ## How to use this API
 
