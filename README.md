@@ -1,6 +1,6 @@
-# Sure ACME
+# ACME
 
-This is an application to learn Django.
+This is an application to work with Django.
 
 ## How to use this API
 
